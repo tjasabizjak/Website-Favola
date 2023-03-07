@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 18px;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.navbar a:hover {
+  background-color: #a78c7e;
+  color: #fafafa;
+  padding: 20px;
+}
+
+.navbar-mobile {
+  background-color: red;
+  position: fixed;
+  top: 59px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-100px);
+  transition: 2s;
+}
+
+.navbar-mobile .active {
+  transform: translateY(0px);
+}
+
+.right-side {
+  display: flex;
+  padding-left: 150px;
+}
+
+.right-side a {
+  padding-left: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(44, 44, 44);
+  margin: 5px;
+}
+
+/* Main */
+.main-showcase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 680px;
+  background-image: url("images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-showcase-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.main-showcase-logo {
+  z-index: 1;
+}
+
+.main-showcase-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.main-showcase-text h1 {
+  color: white;
+  text-shadow: 0px 0px 10px #000000;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.main-showcase-text p {
+  color: white;
+  text-shadow: 0px 0px 10px #000000;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+/* Malice */
+.malice {
+  display: flex;
+}
+
+.malice h1 {
+  font-family: "Playfair Display", serif;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.malice h2 {
+  font-size: 15px;
+  color: rgba(53, 44, 44, 0.43);
+  padding-bottom: 25px;
+}
+
+.malice p {
+  font-family: Montserrat;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.dodatneMalice p {
+  padding-bottom: 30px;
+}
+
+.dnevneMalice,
+.dodatneMalice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 50px;
+  flex: 1;
+}
+
+.bold {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.wrap {
+  white-space: nowrap;
+}
+
+.menu-line {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-line-seperator {
+  display: flex;
+  min-width: 50px;
+  flex: 1;
+  height: 10px;
+  margin: 0 7px;
+  border-bottom: 2px dotted rgb(45, 45, 45);
+}
+
+.dodatneMalice {
+  background-image: url(images/Artboard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Rezervacija miz */
+
+.rezervacija {
+  height: 630px;
+  background-image: url("images/download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rezervacija-text {
+  padding-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rezervacija h1 {
+  color: white;
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.rezervacija p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #000000;
+  padding: 10px 0;
+}
+
+.rezervacija button {
+  border: none;
+  width: 140px;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #a78c7e;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.rezervacija button:hover {
+  transform: scale(0.98);
+}
+
+.rezervacija a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Ekipa */
+.ekipa2 {
+  display: flex;
+}
+
+.narekovaji {
+  padding-left: 100px;
+  padding-top: 30px;
+  opacity: 0.15;
+}
+
+.ekipa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 300px;
+  text-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ekipa p {
+  font-family: Montserrat;
+  font-weight: lighter;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.ekipa h1 {
+  font-size: 20px;
+  padding-bottom: 100px;
+  font-weight: normal;
+  font-style: oblique;
+}
+
+/* JEDILNI LIST */
+.jedilniList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cenik {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.jedilniList h1,
+.jedilniList h3 {
+  color: #0c0000;
+  font-family: Kepler Std;
+}
+
+.jedilniList h2,
+.jedilniList h4,
+.jedilniList p {
+  color: #0c0000;
+  font-family: Montserrat;
+}
+
+.jedilniList p,
+.hrana2 h4 {
+  color: #383838;
+}
+
+.jedilniList h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+  padding-top: 110px;
+}
+
+.jedilniList h2 {
+  font-size: 17px;
+  color: rgba(53, 44, 44, 0.43);
+  padding-bottom: 80px;
+}
+
+.jedilniList h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 35px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.jedilniList .hrana {
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.jedilniList .cena p,
+.cena2 {
+  letter-spacing: 0.7px;
+  font-size: 17px;
+  padding: 8px 70px;
+}
+
+.hrana p {
+  font-weight: 600;
+  padding: 8px 70px;
+}
+
+.hrana2 {
+  padding-bottom: 150px;
+}
+
+.hrana2 h4 {
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-left: 70px;
+}
+
+.hrana2 p {
+  font-style: italic;
+  font-size: 15px;
+  padding-left: 70px;
+}
+
+.cena2 p {
+  padding-bottom: 33px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.text-footer {
+  margin-left: 100px;
+  color: #727272;
+  font-weight: lighter;
+}
+
+.text-footer p {
+  padding: 3px 0px;
+}
+
+.social {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.social a {
+  margin-right: 30px;
+  color: #a78c7e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.delovnik {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.hours {
+  margin-left: 15px;
+}
+
+.text1 {
+  padding-bottom: 20px;
+}
+
+.text2 {
+  padding-bottom: 80px;
+  font-family: "Poppins", Sans-serif;
+}
+
+.Tjasa {
+  text-decoration: none;
+  color: #b3afaf;
+  font-size: 12px;
+}
+
+footer .cvetje {
+  width: 211px;
+  opacity: 0.15;
+  margin-top: 200px;
+}
+
+footer .desno {
+  display: flex;
+  align-content: space-between;
+}
+
+.text2 a {
+  color: #727272;
+  font-weight: lighter;
+}
+
+/* Maps */
+#map {
+  height: 700px;
+  width: 50%;
+  background-color: gray;
+}
+
+/* Tablets and under */
+@media (max-width: 890px) {
+  .ekipa2,
+  footer {
+    display: inline-block;
+  }
+
+  #map {
+    width: 100%;
+    height: 500px;
+  }
+
+  footer .cvetje {
+    width: 200px;
+  }
+
+  .ekipa {
+    padding-top: 0;
+    padding-right: 50px;
+  }
+
+  #map {
+    width: 890px;
+    height: 600px;
+  }
+
+  footer .cvetje {
+    width: 200px;
+    height: 400px;
+  }
+
+  .social {
+    margin-top: 50px;
+  }
+
+  .text-footer {
+    margin-left: 50px;
+  }
+
+  footer .desno {
+    justify-content: space-evenly;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 0 10px;
+  }
+
+  .navbar a:hover {
+    padding: 20px 10px;
+  }
+
+  .right-side {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .main-showcase-text h1,
+  .rezervacija h1 {
+    text-align: center;
+  }
+
+  .malice {
+    flex-direction: column;
+  }
+
+  .narekovaji {
+    padding-left: 0;
+  }
+
+  .ekipa2,
+  footer {
+    display: inline-block;
+  }
+
+  .ekipa {
+    padding-top: 0px;
+    padding-right: 50px;
+  }
+
+  #map {
+    width: 100%;
+    height: 500px;
+  }
+
+  footer .cvetje {
+    width: 200px;
+    height: 400px;
+  }
+
+  .social {
+    margin-top: 50px;
+  }
+
+  .text-footer {
+    margin-left: 50px;
+  }
+
+  .jedilniList h3 {
+    text-align: center;
+  }
+
+  .hrana p,
+  .hrana2 h4,
+  .hrana2 p {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .jedilniList .cena p,
+  .cena2 {
+    padding-bottom: 11px;
+  }
+
+  .cena2 p {
+    padding-bottom: 53px;
+    padding-top: 10px;
+  }
+
+  .mediteransko {
+    padding-bottom: 6px;
+  }
+}
